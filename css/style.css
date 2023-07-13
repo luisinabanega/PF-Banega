@@ -24,12 +24,6 @@ html {
 nav {
     background-color: #F0E0FF;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 h1 {
     font-size: 40px;
@@ -59,9 +53,6 @@ li {
 header img {
     height: 56px;
     width: 255px;
-}
-header {
-    background-color: #F0E0FF;
 }
 body {
     background-image: url('../images/fondo.png');
