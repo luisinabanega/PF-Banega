@@ -21,11 +21,18 @@ html {
     font-weight: bold;
     font-style: normal;
 }
+.body-con-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 112px;
+    }
 nav {
     background-color: #F0E0FF;
     position: fixed;
+    width: 100%;
 }
 h1 {
+    font-family: 'montserrat-bold';
     font-size: 40px;
 }
 ul {
@@ -60,26 +67,30 @@ body {
     background-repeat: no-repeat;
 }
 h2 {
-    padding: 84px 0 0 90px;
+    font-family: 'montserrat-bold';
     font-size: 20px;
+    padding: 28px 0 28px 90px;
+}
+.welcome {
+    display: grid;
+    grid-row: auto;
+    row-gap: 24px;
+    padding-left: 90px;
+}
+.welcome-cuerpo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 94px;
+    gap: 24px;
 }
 .texto-bienvenida {
     display: flex;
-    width: 538px;
-    height: 88px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
+    width: 50%;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.14px;
-}
-#welcome {
-    text-align: left;
-    width: 50%;
-    padding: 150px 0 0 90px;
 }
 p {
     font-family: 'montserrat-regular';
@@ -151,14 +162,94 @@ a {
 }
 footer {
     background-color: #F0E0FF;
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-#footer-nav {
+.footer-nav {
     display: flex;
     justify-content: start;
+}
+.footer-item {
+    font-size: 12px;
+}
+footer img {
+    height: 104px; 
+    width: 255px;
+}
+@media (max-width: 412px) {
+    body {
+        background-image: url('../images/fondo-mobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 20px;
+        padding: 32px 0 24px 16px;
+    }
+    .welcome {
+        display: grid;
+        grid-row: auto;
+        row-gap: 24px;
+        padding-top: 40px;
+        padding-inline: 16px;
+    }
+    .welcome-cuerpo {
+        display: flex;
+        flex-direction: column;
+        padding: 16px 0 0 16px;
+        gap: 52px;
+    }
+    .texto-bienvenida {
+        font-family: 'montserrat-semibold';
+        display: flex;
+        width: 100%;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.14px;
+    }
+    .button-link {
+        width: 160px;
+    }
+    .botones-inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .projects-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+    .projects-img img {
+        display: flex;
+        max-width: 328px;
+        max-height: 224px;
+    }
+    footer {
+        background-color: #F0E0FF;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-item {
+        font-size: 12px;
+    }
+    li {
+        padding: 16px;
+    }
 }
