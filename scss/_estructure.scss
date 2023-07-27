@@ -1,0 +1,223 @@
+$font-path: '../font/Montserrat/static/';
+@font-face {
+    font-family: $font-montserrat-regular;
+    src: url('#{$font-path}Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-montserrat-medium;
+    src: url('#{$font-path}Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: $font-montserrat-semibold;
+    src: url('#{$font-path}Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: $font-montserrat-bold;
+    src: url('#{$font-path}Montserrat-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background-image: url('../images/fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav {
+    background-color: $primary-color;
+    position: fixed;
+    width: 100%;
+}
+h1 {
+    font-family: $font-montserrat-bold;
+    font-size: 40px;
+}
+h2 {
+    font-family: $font-montserrat-bold;
+    font-size: 20px;
+    padding: 28px 0 28px 90px;
+    @media (max-width: 412px) {
+        font-size: 32px;
+        padding: 32px 0 24px 16px;
+    }
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    @include flex-center;
+}
+li {
+    font-family: $font-montserrat-regular;
+    color: $text-color;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+    display: inline-flex;
+    padding: 8px 32px;
+    @include flex-center;
+    @media (max-width: 412px) {
+        padding: 16px;
+    }
+}
+header img {
+    height: 56px;
+    width: 255px;
+}
+.welcome {
+    display: grid;
+    grid-row: auto;
+    row-gap: 24px;
+    padding-left: 90px;
+    @media (max-width: 412px) {
+        display: grid;
+        grid-row: auto;
+        row-gap: 24px;
+        padding-top: 40px;
+        padding-inline: 16px;
+    }
+}
+.welcome-cuerpo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 94px;
+    gap: 24px;
+    @media (max-width: 412px) {
+        display: flex;
+        flex-direction: column;
+        padding: 16px 0 0 16px;
+        gap: 52px;
+    }
+}
+.texto-bienvenida {
+    display: flex;
+    width: 50%;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.14px;
+    @media (max-width: 412px) {
+        font-family: $font-montserrat-semibold;
+        display: flex;
+        width: 100%;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.14px;
+    }
+}
+p {
+    font-family: $font-montserrat-regular;
+    font-size: 14px;
+}
+.button-link {
+    display: inline-block;
+    background-color: $secondary-color;
+    border-radius: 1000px;
+    color: $text-color;
+    font-family: $font-montserrat-semibold;
+    width: 163px;
+    height: 64px;
+    text-align: center;
+    line-height: 64px;
+    font-size: 12px;
+    text-decoration: none;
+    @media (max-width: 412px) {
+        width: 160px;
+    }
+}
+.botones-inicio {
+    display: flex;
+    gap: 24px;
+    @media (max-width: 412px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+}
+.botones-contact {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 4;
+    justify-content: center;
+    align-content: center;
+    gap: 24px;
+}
+.boton-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 2px;
+    color: $text-color;
+    font-family: $font-montserrat-semibold;
+    width: 350px;
+    height: 104px;
+    text-align: center;
+    font-size: 20px;
+}
+.projects-img {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 538px 538px;
+    grid-template-rows: 320px 320px;
+    gap: 24px;
+    @media (max-width: 412px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+}
+.aboutme-content {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+.resume-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 726px;
+    height: 100%;
+    margin: 0 auto;
+}
+footer {
+    background-color: $primary-color;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-nav {
+    display: flex;
+    justify-content: start;
+}
+.footer-item {
+    font-size: 12px;
+}
+footer img {
+    height: 104px;
+    width: 255px;
+}
