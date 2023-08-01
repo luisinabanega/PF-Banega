@@ -135,9 +135,29 @@ header img {
   }
 }
 
+.resume-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 726px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.experience-title {
+  font-family: "montserrat-medium";
+  font-size: 16px;
+  text-align: center;
+}
+
 p {
   font-family: "montserrat-regular";
   font-size: 14px;
+}
+
+.aboutme-foto {
+  width: 320px;
+  height: 320px;
 }
 
 .button-link {
@@ -223,15 +243,6 @@ p {
 
 a {
   text-decoration: none;
-}
-
-.resume-p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 726px;
-  height: 100%;
-  margin: 0 auto;
 }
 
 footer {
