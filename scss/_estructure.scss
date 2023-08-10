@@ -31,6 +31,11 @@ body {
     background-image: url('../images/fondo.png');
     background-size: cover;
     background-repeat: no-repeat;
+    @media (max-width: 412px) {
+        background-image: url('../images/fondo-mobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 nav {
     background-color: $primary-color;
@@ -127,6 +132,16 @@ header img {
     width: 726px;
     height: 100%;
     margin: 0 auto;
+    padding: 16px 0 40px 0;
+    @media (max-width: 412px) {
+        font-family: $font-montserrat-regular;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 100%;
+        padding: 8px 8px 32px 8px;
+    }
 }
 .experience-title {
     font-family: $font-montserrat-medium;
@@ -140,6 +155,11 @@ p {
 .aboutme-foto {
     width: 320px;
     height: 320px;
+    @media (max-width: 412px) {
+        width: 160px;
+        height: 160px;
+        
+    }
 }
 .button-link {
     display: inline-block;
@@ -199,16 +219,27 @@ p {
     @media (max-width: 412px) {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         gap: 8px;
+        padding: 0 16px 0 16px;
+        img {
+            width: 100%;
+        }
     }
 }
 .aboutme-content {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
+    flex-direction: row;
+    padding: 64px;
+    gap: 48px;
+    @media (max-width: 412px) {
+        @include flex-center;
+        flex-direction: column;
+        p {
+            width: 412px;
+            padding: 16px;
+        }
+    }
 }
 a {
     text-decoration: none;
@@ -218,6 +249,15 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 136px;
+    @media (max-width: 412px) {
+        background-color: $primary-color;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 .footer-nav {
     display: flex;

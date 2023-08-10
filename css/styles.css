@@ -23,6 +23,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 412px) {
+  body {
+    background-image: url("../images/fondo-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 
 nav {
   background-color: #F0E0FF;
@@ -142,6 +149,18 @@ header img {
   width: 726px;
   height: 100%;
   margin: 0 auto;
+  padding: 16px 0 40px 0;
+}
+@media (max-width: 412px) {
+  .resume-p {
+    font-family: "montserrat-regular";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    padding: 8px 8px 32px 8px;
+  }
 }
 
 .experience-title {
@@ -158,6 +177,12 @@ p {
 .aboutme-foto {
   width: 320px;
   height: 320px;
+}
+@media (max-width: 412px) {
+  .aboutme-foto {
+    width: 160px;
+    height: 160px;
+  }
 }
 
 .button-link {
@@ -228,17 +253,34 @@ p {
   .projects-img {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 8px;
+    padding: 0 16px 0 16px;
+  }
+  .projects-img img {
+    width: 100%;
   }
 }
 
 .aboutme-content {
   display: flex;
-  gap: 24px;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  padding: 64px;
+  gap: 48px;
+}
+@media (max-width: 412px) {
+  .aboutme-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .aboutme-content p {
+    width: 412px;
+    padding: 16px;
+  }
 }
 
 a {
@@ -250,6 +292,17 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-top: 136px;
+}
+@media (max-width: 412px) {
+  footer {
+    background-color: #F0E0FF;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .footer-nav {
