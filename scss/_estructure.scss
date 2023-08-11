@@ -5,17 +5,14 @@ $font-path: '../font/Montserrat/static/';
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: $font-montserrat-medium;
     src: url('#{$font-path}Montserrat-Medium.ttf');
 }
-
 @font-face {
     font-family: $font-montserrat-semibold;
     src: url('#{$font-path}Montserrat-SemiBold.ttf');
 }
-
 @font-face {
     font-family: $font-montserrat-bold;
     src: url('#{$font-path}Montserrat-Bold.ttf');
@@ -173,6 +170,7 @@ p {
     line-height: 64px;
     font-size: 12px;
     text-decoration: none;
+    border-color: $accent-color;
     @media (max-width: 412px) {
         width: 160px;
     }
@@ -249,7 +247,8 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 136px;
+    position: fixed;
+    bottom: 0;
     @media (max-width: 412px) {
         background-color: $primary-color;
         width: 100%;
@@ -257,6 +256,8 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        position: fixed;
+        bottom: 0;
     }
 }
 .footer-nav {

@@ -197,6 +197,7 @@ p {
   line-height: 64px;
   font-size: 12px;
   text-decoration: none;
+  border-color: #5C3283;
 }
 @media (max-width: 412px) {
   .button-link {
@@ -292,7 +293,8 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 136px;
+  position: fixed;
+  bottom: 0;
 }
 @media (max-width: 412px) {
   footer {
@@ -302,6 +304,8 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    bottom: 0;
   }
 }
 
@@ -317,6 +321,14 @@ footer {
 footer img {
   height: 104px;
   width: 255px;
+}
+
+.boton-contact:hover {
+  background-color: #B99DD2;
+}
+
+.button-link:hover {
+  background-color: #B99DD2;
 }
 
 /*# sourceMappingURL=styles.css.map */
